@@ -7,6 +7,7 @@
     <title>Formulário Cadastro</title>
     <link rel="stylesheet" href="css/css-reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -25,21 +26,21 @@
       <section class="content-space">
         <h1>Contato</h1>
         <h3>Deixe sua sugestão, elogio ou reclamação.</h3>
-        <form action="cursos.html">
+        <form action="#">
           <div class="name-space">
             <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" />
+            <input type="text" name="nome" id="nome_user" placeholder="Digite seu nome" />
           </div>
           <div class="course-space">
             <label for="email">E-mail</label>
-            <input type="text" name="email" id="nome" />
+            <input type="text" name="email" id="email_user" placeholder="Digite seu e-mail" />
           </div>
           <div class="message-space">
               <label for="message">Mensagem</label>
-              <textarea name="message" id="" cols="30" rows="10"></textarea>
+              <textarea name="message" id="msg_user" cols="30" rows="10" placeholder="Sua mensagem aqui"></textarea>
           </div>
           <div class="btn-wrapper">
-            <input type="submit" class="sbmt" value="Enviar">
+            <input type="submit" class="sbmt" value="Enviar" onclick="validar()">
             <input type="reset" class="rst" value="Limpar">
           </div>
         </form>
