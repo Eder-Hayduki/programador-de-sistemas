@@ -16,12 +16,19 @@ document.getElementById('msg_user').style.color = '#013482';
 */
 
 function validar() {
+  
   let typeName = document.getElementById("nome_user").value;
   let typeEmail = document.getElementById("email_user").value;
   let typeMsg = document.getElementById("msg_user").value;
-  if (typeName == "" || typeEmail == "" || typeMsg == "") {
+  if (typeName == "" || typeEmail == "" || typeMsg == "") 
+  {
     alert("Por favor preencha todos os campos");
-  } else {
+  }
+  if (typeName.value.length < 3) {
+    alert("O nome precisa ter mais de 3 caracteres");
+  }
+  
+  else {
     alert(`Seja bem vindo ${typeName}`);
   }
 }

@@ -1,4 +1,4 @@
-/* Cabeçalho */
+/* CABEÇALHO */
 body {
   font-family: Arial, sans-serif;
 }
@@ -9,7 +9,6 @@ body {
 
 .img-wrp {
   width: 100%;
-  display: block;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,12 +52,65 @@ nav ul li a:hover {
   transition: all 0.25s;
 }
 
-/* SECTION */
-
 .content-space {
   margin: 0 auto;
   width: 80%;
 }
+
+
+/* index -> lista de cursos */
+
+ #card-content {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  background-color: yellowgreen;
+  margin: 3% 0;
+}
+
+.card {
+  width: 28%;
+  background: azure;
+  height: 25rem;
+  position: relative;
+  border-radius: .25rem;
+}
+
+.img-wrp {
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+}
+
+.img-wrp img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+  transition: opacity .25s;
+}
+
+.card-information {
+  /* visibility: hidden; */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-information h3 {
+  color: #175490;
+  font-weight: bold;
+  padding: .675rem 0 1rem 0;
+}
+
+.card-information p {
+  color: #272727;
+  line-height: 1.4rem;
+  margin: 0 .5rem 1rem .5rem;
+}
+
+
 
 h1 {
   margin: 0 auto;
@@ -80,6 +132,7 @@ h3 {
   color: #e4860b;
 }
 
+/* CONTATO */
 .name-space,
 .course-space {
   display: flex;
@@ -98,8 +151,7 @@ label {
 }
 
 input[type="text"],
-textarea
-{
+textarea {
   width: 78%;
   padding: 0.675rem;
   font-size: 1rem;
@@ -137,8 +189,7 @@ button {
 }
 
 input[type="submit"],
-input[type="reset"]
-{
+input[type="reset"] {
   padding: 0.675rem 2rem;
   margin: 1.5rem 1.25rem;
   border-radius: 0.125rem;
@@ -155,7 +206,7 @@ input[type="reset"]
 .sbmt:hover {
   background-color: #013482;
   transition: 0.5s;
-  border: 1px solid #013482
+  border: 1px solid #013482;
 }
 
 .rst {
@@ -174,23 +225,23 @@ input[type="reset"]
 
 /* somente para buttons */
 .info {
-    background-color: #218efb;
+  background-color: #218efb;
 }
 
 .info a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Na página contato, para posicionamento do textarea */
 .message-space {
-    display: flex;
-    padding: .5rem;
-    width: 100%;
-    align-items: flex-start;
+  display: flex;
+  padding: 0.5rem;
+  width: 100%;
+  align-items: flex-start;
 }
 
-/* Tabelas dos cursos da página de cursos */
+/* Tabelas dos cursos da PÁGINA CURSOS */
 
 table {
   width: 100%;
@@ -204,16 +255,16 @@ table td {
 }
 
 .categoria {
-    width: 15%;
+  width: 15%;
 }
 .nome-categoria {
-    width: 55%;
+  width: 55%;
 }
 .valor {
-    width: 10%;
+  width: 10%;
 }
 .matricular {
-    width: 20%;
+  width: 20%;
 }
 
 .cabecalho {
