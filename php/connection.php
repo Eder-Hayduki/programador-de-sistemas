@@ -1,5 +1,5 @@
 <?php
-    //esses valores são padrão
+    //esses valores são padrão 
     $server = 'localhost'; 
     $user = 'root'; 
     $password = '';
